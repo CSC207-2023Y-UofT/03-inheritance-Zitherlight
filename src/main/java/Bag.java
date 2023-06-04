@@ -93,7 +93,7 @@ public abstract class Bag {
             for (int i = 0; i < n - 1; i++) {
                 newContent[i] = this.contents[i];
             }
-            this.contents = newContents
+            this.contents = newContents;
             this.numberOfContents--;
             return answer;
         } else {
@@ -107,7 +107,7 @@ public abstract class Bag {
      */
     public void increaseCapacity(int n) {
         // TODO: Implement this method.
-        this.capacity += n
+        this.capacity += n;
     }
 
     /**
