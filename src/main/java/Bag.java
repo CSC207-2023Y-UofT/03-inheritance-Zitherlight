@@ -88,10 +88,10 @@ public abstract class Bag {
     public String popItem() {
         int n = this.contents.length;
         if (n > 0) {
-            answer = this.contents[n - 1];
-            String[] newContent;
+            String answer = this.contents[n - 1];
+            String[] newContents;
             for (int i = 0; i < n - 1; i++) {
-                newContent[i] = this.contents[i];
+                newContents[i] = this.contents[i];
             }
             this.contents = newContents;
             this.numberOfContents--;
