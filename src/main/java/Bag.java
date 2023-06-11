@@ -71,7 +71,7 @@ public abstract class Bag {
         int n = this.contents.length;
         if (n < this.capacity) {
             this.contents[n] = item;
-            this.numberOfContents++;
+            this.numberOfContents += 1;
             return true;
         } else {
             return false;
@@ -92,7 +92,7 @@ public abstract class Bag {
         if (n > 0) {
             String answer = this.contents[n - 1];
             this.contents[n - 1] = null;
-            this.numberOfContents--;
+            this.numberOfContents -= 1;
             return answer;
         } else {
             return null;
