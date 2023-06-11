@@ -40,7 +40,7 @@ class BagMain {
             if (i instanceof CrossbodyBag) {
                 ans += ((CrossbodyBag) i).getNumberOfStraps();
             }
-        return ans;
         }
+        return ans;
     }
 }
