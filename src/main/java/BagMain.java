@@ -5,7 +5,7 @@
  * You may find the readings in chapter 3. Relationships between Classes
  * helpful while working through this exercise.
  */
-class BagMain {
+class BagMain extends Bag{
     /**
      * TODO: Implement this method
      * Enhance each of the bags in bags. If double_enhance_handbags is
