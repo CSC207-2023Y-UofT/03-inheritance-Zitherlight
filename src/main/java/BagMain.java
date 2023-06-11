@@ -18,12 +18,8 @@ class BagMain {
         // TODO: Implement this.
         for (Bag i : bags) {
             i.enhance();
-        }
-        if (double_enhance_handbags) {
-            for (Bag i : bags) {
-                if (i.isInstance(HandBag)) {
-                    i.enhance();
-                }
+            if (double_enhance_handbags && i.isInstance(HandBag)) {
+                i.enhance();
             }
         }
     }
