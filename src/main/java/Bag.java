@@ -29,6 +29,8 @@ public abstract class Bag {
     public Bag(String bagColour, int bagCapacity) {
         this.color = bagColour;
         this.capacity = bagCapacity;
+        this.numberOfContents = 0;
+        this.contents = new String[bagCapacity];
     }
     /*
      * TODO: Create a variety of 'getter' functions.
