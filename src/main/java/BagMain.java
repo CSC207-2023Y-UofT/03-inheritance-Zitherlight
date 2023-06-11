@@ -5,7 +5,7 @@
  * You may find the readings in chapter 3. Relationships between Classes
  * helpful while working through this exercise.
  */
-class BagMain extends Bag{
+class BagMain {
     /**
      * TODO: Implement this method
      * Enhance each of the bags in bags. If double_enhance_handbags is
@@ -18,8 +18,8 @@ class BagMain extends Bag{
         // TODO: Implement this.
         for (Bag i : bags) {
             i.enhance();
-            if (double_enhance_handbags && i.isInstance(HandBag)) {
-                i.enhance();
+            if (double_enhance_handbags && i instanceof HandBag) {
+                ((HandBag) i).enhance();
             }
         }
     }
@@ -37,8 +37,8 @@ class BagMain extends Bag{
         // TODO: Implement this.
         int ans;
         for (Bag i : bags) {
-            if (i.isInstance(CrossbodyBag)) {
-                ans += i.getNumberOfStraps();
+            if (i instanceof CrossbodyBag) {
+                ans += ((CrossbodyBag) i).getNumberOfStraps();
             }
         return ans;
         }
